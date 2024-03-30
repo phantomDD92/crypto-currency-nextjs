@@ -4,8 +4,9 @@ import Layout from "../components/Layout";
 import SearchBar from "../components/SearchBar/SearchBar";
 import Coins from "../components/Coins/Coins";
 
-export default function Home({ data }) {
+export default function Home({}) {
   const [search, setSearch] = useState("");
+  const [data, setData] = useState([]);
 
   useEffect(() => {
     const fetchData = async () => {
